@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/romana-bt" rel="stylesheet">
 </head>
+
 <body>
     <!-- ====================================================== NAV BAR ================================================ -->
-    <nav class="navbar">
-        <h1 class="logo">QUEEN'S <br><p class="logo2">Beauty Parlour</p></h1>
+    <nav class="navbar" id="navbar">
+        <h1 class="logo">QUEEN'S <br>
+            <p class="logo2">Beauty Parlour</p>
+        </h1>
         <ul class="nav-links">
             <li><a href="#Home" class="active">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#Home">Recent Finishes</a></li>
-            <li><a href="#Home">About</a></li>
-            <li class="ctn"><a href="#Home">Contact</a></li>
+            <li><a href="#recent">Recent Finishes</a></li>
+            <!-- <li><a href="#Home">About</a></li> -->
+            <li><a href="#contact" class="ctn">Contact</a></li>
         </ul>
         <div class="menu-btn">
             <div class="bline"></div>
@@ -68,47 +74,66 @@
         </div>
     </section>
     <!-- ====================================================== RECENT FINISHES ================================================ -->
-    <section class="explore">
+    <section class="explore" id="recent">
         <div class="explore-content">
-        <h1>Recent Finishes</h1>
-        <div class="line"></div>
-    </div>
-    </section>
-
-    <section class="contact" id="contactus">
-        
-    </section>
-
-    <!-- <section class="tours">
-        <div class="row">
-            <div class="col content-col">
-                <h1>UPCOMING TOURS AND DESTINATIONS</h1>
-                <div class="line"></div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur dolores laudantium eaque temporibus voluptatum nobis. Iusto, expedita facilis saepe cum eius nulla officiis possimus doloremque perspiciatis! Vel, est earum!</p>
-                <a href="#" class="ctn">Learn More</a>
-            </div>
-            <div class="col image-col">
-                <div class="image-gallery">
-                    <img src="bg.jpg" width="150px" height="150px">
-                    <img src="bg1.jpg"width="150px" height="150px">
-                    <img src="bg2.jpg"width="150px" height="150px">
-                    <img src="bg.jpg"width="150px" height="150px">
+            <h1>Recent Finishes</h1>
+            <div class="line"></div>
+            <!-- ====================== Image Slide Show ================ -->
+            <div class="slideshow-container fade">
+                <div class="Containers">
+                    <img src="slideshow/image1.jpg" width="300px" height="200px">
                 </div>
+
+                <div class="Containers">
+                    <img src="slideshow/image2.jpg" width="300px" height="200px">
+                </div>
+
+                <div class="Containers">
+                    <img src="slideshow/image3.jpg" width="300px" height="200px">
+                </div>
+
+                <div class="Containers">
+                    <img src="slideshow/image4.jpg" width="300px" height="200px">
+                </div>
+
+                <div class="Containers">
+                    <img src="slideshow/image5.jpg" width="300px" height="200px">
+                </div>
+
+                <div class="Containers">
+                    <img src="slideshow/image6.jpg" width="300px" height="200px">
+                </div>
+
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
             </div>
-        </div>
-    </section> -->
+            <br>
+            <!-- The circles/dots -->
+            <div style="text-align:center ">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+                <span class="dots" onclick="currentSlide(4)"></span>
+                <span class="dots" onclick="currentSlide(5)"></span>
+                <span class="dots" onclick="currentSlide(6)"></span>
+            </div>
+    </section>
 
     <section class="footer">
-        <!-- <h1 class="logo">QUEEN'S <br><p class="logo2">Beauty Parlour</p></h1> -->
+        <h1><a href="#navbar" class="lgo">QUEEN'S <br>
+                <p class="lgo2">Beauty Parlour</p>
+            </a></h1>
+        <div class="center" id="contact">
+                <ul class="social">
+                    <li><a href="" class="fa fa-phone"></a></li>
+                    <li><a href="" class="fa fa-instagram"></a></li>
+                    <li><a href="" class="fa fa-envelope"></a></li>
+                    <li><a href="" class="fa fa-whatsapp"></a></li>
+                </ul>
+        </div>
+        <h4 class="copy">Copyright &copy 2023</h4>
     </section>
-
-    <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
-
-        menuBtn.addEventListener('click',()=>{
-            navlinks.classList.toggle('mobile-menu')
-        })
-    </script>
+    <script src="js/mainpage.js"></script>
 </body>
+
 </html>
