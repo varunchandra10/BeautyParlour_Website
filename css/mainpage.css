@@ -158,6 +158,18 @@ section{
     align-items: center;
     width:60%; 
 }
+.row2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row2 .col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:60%; 
+}
 h4{
     font-size: 4vmin;
     color:#484872;
